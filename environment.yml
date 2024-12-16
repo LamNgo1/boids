@@ -1,0 +1,24 @@
+name: boids2
+channels:
+  - gpytorch
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.10.12
+  - pip=23.2.1
+  - gxx_linux-64
+  - gcc_linux-64
+  - swig
+  - pip:
+      - numpy==1.24.4
+      - matplotlib==3.8.4
+      - pymoo==0.6.1
+      - torch==1.13.1
+      - torchvision==0.14.1
+      - torchaudio==0.13.1
+      - gpytorch==1.11
+      - botorch==0.11.0
+      - pandas==2.2.2
+      - gym==0.26.2
+      - gym[mujoco]
