@@ -1,15 +1,20 @@
+#  BOIDS: High-dimensional Bayesian Optimization via Incumbent-guided Direction Lines and Subspace Embedding
+
 ## Overview
 
-Implementation code for paper ***BOIDS: High-dimensional Bayesian Optimization via Incumbent-guided Direction Lines and Subspace Embeddings*** pulished in *The 39th Annual AAAI Conference on Artificial Intelligence (AAAI-2025)*. The manuscript can be found at https://ojs.aaai.org/index.php/AAAI/article/view/34165.
+Implementation code for paper ***BOIDS: High-dimensional Bayesian Optimization via Incumbent-guided Direction Lines and Subspace Embeddings*** published in *The 39th Annual AAAI Conference on Artificial Intelligence (AAAI-2025)*. The manuscript can be found at https://ojs.aaai.org/index.php/AAAI/article/view/34165.
 
 ![illustration of boids](boids_illustration.png)
 
 If you find our paper or this repo to be useful for your research, please consider citing:
 ```
 @inproceedings{ngo2025boids,
-  title={BOIDS: High-dimensional Bayesian Optimization via Incumbent-guided Direction Lines and Subspace Embeddings},
+  title={BOIDS: High-Dimensional Bayesian Optimization via Incumbent-Guided Direction Lines and Subspace Embeddings},
   author={Ngo, Lam and Ha, Huong and Chan, Jeffrey and Zhang, Hongyu},
   booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={18},
+  pages={19659--19667},
   year={2025}
 }
 ```
