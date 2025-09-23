@@ -35,20 +35,20 @@ The main file is ```test-boids.py```. To run the code for any problem, use the f
 ```
 python test-boids.py -f <function_name> -d <input_dim> -n <number_of_iterations>
 ```
-The above command only list required arguments. Please check the following table for optional arguments, as well as possible values for each arguments.
+The above command only lists required arguments. Please check the following table for optional arguments, as well as possible values for each argument.
 
 | Flag &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Description |
 | --- | --- | 
 | -f | A string for objective function, e.g., ackley, branin500, hartmann500, mopta, lasso-dna, half-cheetah, etc. See ```test_functions/utils.py``` for more options. |
 | -d | An integer to specify the objective function input dimensionality. Only works for scalable synthetic functions, e.g., ackley, alpine, levy. See ```test_functions/utils.py``` for more options. |
-| -n | An integer to specify to iteration budget. |
+| -n | An integer to specify the iteration budget. |
 | -a | (Optional) A string for the acquisition function, e.g., ```ts```, ```ei```, ```ucb```, ```logei```. Default is ```ts``` |
 | -m | (Optional) An integer to specify the number of particles (population of PSO swarm). Default is ```20```. |
 | -w | (Optional) A float to specify the inertia parameter. Default is ```0.729```. |
 | -c1 | (Optional) A float to specify the cognitive parameter. Default is ```2.05*0.729```. |
 | -c2 | (Optional) A float to specify the social parameter. Default is ```2.05*0.729```. |
 | --output | (Optional) A string to specify the output folder. Output will be exported to the folder as a pickle file. Default is ```/output```. |
-| --seed | (Optional) An integer to specify the random seed for random number generator. Default is ```1```. |
+| --seed | (Optional) An integer to specify the random seed for the random number generator. Default is ```1```. |
 
 
 ## Results from paper
@@ -56,6 +56,6 @@ To produce the main experimental results in the paper (Fig. 2), run the bash fil
 
 # Acknowledgements
 
-This code implementation uses materials from the following public repositories to implemenent the subspace embedding. We thank the respective repository maintainers.
+This code implementation uses materials from the following public repositories to implement the subspace embedding. We thank the respective repository maintainers.
 1. BAxUS: Papenmeier, L., Nardi, L., & Poloczek, M. (2022). Increasing the scope as you learn: Adaptive Bayesian optimization in nested subspaces. Advances in Neural Information Processing Systems, 35, (NeurIPS).
    Code repo: https://github.com/LeoIV/BAxUS
