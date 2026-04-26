@@ -745,6 +745,8 @@ class BOIDS():
                     )
                     self._resample_and_restart(
                         n_points=self.n_init, K=self.K_init)
+                    if self.n_evals >= self.max_evals: # restart withou enough budget
+                        break
                     self._previous_restarts.append(self.n_evals)
                     self._dim_in_iterations[self.n_evals] = self.target_dim
 
@@ -770,6 +772,8 @@ class BOIDS():
                 self.succcount = 0
             else:
                 self._resample_and_restart(self.n_init, self.K_init)
+                if self.n_evals >= self.max_evals: # restart withou enough budget
+                    break
                 fbest = self._fX.min()
                 info(
                     f"BOIDS iteration {self.n_evals}: starting from fbest = {fbest:.4}")
